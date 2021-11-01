@@ -6532,9 +6532,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Welcome to Butt Lumps. Do stuff already before I do it for you. \n\n\nIf
-    you actually bother to read anything beyond this congrats, you found nothing
-    of value."
+  m_text: 'Welcome to whatever this is. Do stuff like pressing the thumbstick+grip
+    to teleport.
+
+
+
+    If you actually bother to read anything beyond this congrats,
+    you found nothing of value.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
