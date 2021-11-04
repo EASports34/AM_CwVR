@@ -1208,8 +1208,8 @@ MonoBehaviour:
       m_Action: Action
       m_Flags: 0
     - m_Name: 
-      m_Id: 985ff5ca-eed7-4b5c-ba3a-dfe5cd08a506
-      m_Path: <XRController>{LeftHand}/thumbstickTouched
+      m_Id: c6cc2a06-e84d-41eb-85f7-ab83f8434b1a
+      m_Path: <XRController>{LeftHand}/thumbstickClicked
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -2072,7 +2072,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 18a410c0bb70a6549be9550519d724f1, type: 3}
+  sound: {fileID: 8300000, guid: 73fe6f8dbb7a64c96a1d52f467088b5d, type: 3}
   volume: 1
   randomPitchVariance: 0
 --- !u!82 &452221370
@@ -2378,8 +2378,8 @@ MonoBehaviour:
       m_Action: Action
       m_Flags: 0
     - m_Name: 
-      m_Id: d9dbb02b-3d64-4671-afb2-41f59b5e2a6a
-      m_Path: <XRController>{RightHand}/thumbstickTouched
+      m_Id: 4d228877-79cb-4078-8dda-3b3b2a4ee3a5
+      m_Path: <XRController>{RightHand}/thumbstickClicked
       m_Interactions: 
       m_Processors: 
       m_Groups: 
@@ -4830,7 +4830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1131260886}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2132865690}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1131260886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6095,7 +6107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0755a2ba17a31d643b4a27e3034d8a79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sound: {fileID: 8300000, guid: 18a410c0bb70a6549be9550519d724f1, type: 3}
+  sound: {fileID: 8300000, guid: 73fe6f8dbb7a64c96a1d52f467088b5d, type: 3}
   volume: 1
   randomPitchVariance: 0
 --- !u!82 &1495283209
@@ -6783,8 +6795,8 @@ MonoBehaviour:
 
 
 
-    If you actually bother to read anything beyond this congrats,
-    you found nothing of value.'
+    Pick up objects with the grip button while your ray is hovered
+    over them.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7439,9 +7451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Shut up please.
-
-'
+  m_text: Ok.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
